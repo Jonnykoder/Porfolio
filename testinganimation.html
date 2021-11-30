@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+
+        }
+        .wrapper{
+            display: flex;
+            
+        }
+
+        .wrapper .static{
+            color: #fff;
+            font-size:90px;
+            font-weight: 400;
+        }
+         
+        .wrapper .dynamic{
+            margin-bottom: 15px;
+            line-height: 90px;
+            height: 90px;
+            overflow: hidden;
+        }
+
+        .dynamic li{
+            list-style: none;
+            color: #ff4c29;
+            font-size: 60px;
+            font-weight: 500;
+            top: 0;
+            animation:  slide 12s steps(4) infinite;
+            position: relative;
+        }
+
+        @keyframes slide{
+            100% {
+                top : -360px;
+            }
+        } 
+        
+        .dynamic li{
+            position: relative;
+        }
+        .dynamic li::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: aqua;
+            left: 0;
+            border-left: 2px solid  #ff4c29;
+            animation: typing 3s steps(17) infinite;
+        }
+
+        @keyframes typing{
+            40%,60%{
+                left :calc(100% + 30px);
+            }
+            100%{
+                left: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+                    <div class="static">
+                        Iam
+                    </div>
+                        <ul class="dynamic"> 
+                           <li><span>Web Developer</span></li>
+                           <li><span>Student</span></li>
+                           <li><span>Virtual Assistant </span></li>
+                        </ul>
+                   
+         </div>
+</body>
+</html>
