@@ -361,7 +361,7 @@ img{
   background-color: var(--hover-color);
 }
 .visit-webp{
-    border: none;
+    text-align: center;
     background-color: var(--first-color);
     color: #fff;
     padding: .5rem 2.5rem;
@@ -369,6 +369,10 @@ img{
     margin: 0 auto;
     display: block;
     
+}
+.visit-webp:hover{
+border-bottom: 2px solid wheat;
+color: var(--third-color);
 }
 
 
