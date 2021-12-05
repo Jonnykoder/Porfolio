@@ -9,10 +9,10 @@
 
 /*===== Colors =====*/
 :root{
-  --first-color: #FF914D;
-  --second-color: #313530;
-  --third-color:  #6bccac;
-  --hover-color:#ff6200;
+  --first-color:   #FF914D;
+  --second-color:  #313530;
+  --third-color:   #6bccac;
+  --hover-color:   #ff6200;
 }
 
 /*===== Typography =====*/
@@ -234,9 +234,9 @@ img{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color:var(--first-color);
+    background-color:#fff;
     left: 0;
-    border-left: 2px solid var(--first-color);
+    border-left: 2px solid var(--second-color);
     animation: typing 3s steps(17) infinite;
     font-size: var(--big-font-size);
 }
@@ -272,9 +272,8 @@ img{
 }
 .nav__logo{
  
-  width: 50px;
-  height: 50px;
-}
+  width: 30px;
+  }
 .nav__toggle{
   color: var(--second-color);
   font-size: 1.5rem;
@@ -528,7 +527,7 @@ color: var(--third-color);
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 640px){
   body{
     margin: 0;
   }
@@ -579,8 +578,8 @@ color: var(--third-color);
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 400px;
-    bottom: 15%;
+    width: 300px;
+    bottom: 22%;
   }
  
 
@@ -614,7 +613,7 @@ color: var(--third-color);
   }
   .home__img{
     right: 10%;
-    width: 400px;
+    width: 300px;
   }
   
 }
@@ -628,4 +627,9 @@ color: var(--third-color);
    
  
 }
+#home{
 
+  padding:1em;
+  border-radius: 10px;
+  width: 80%;
+}
