@@ -93,7 +93,7 @@
 
 }
 
-/*===== Margenes =====*/
+/*===== Margin =====*/
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -431,7 +431,14 @@ color: var(--third-color);
 .skills__icon{
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: var(--first-color);
+  color: var(--first-color) !important;
+ 
+}
+.skills__icon >img{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color) !important;
+ 
 }
 .skills__names{
   display: flex;
@@ -671,6 +678,10 @@ color: var(--third-color);
 .card4{
   background-image: url(./images/Tara-gala.png);
 }
+
+.card5{
+  background-image: url(./images/toys-app.png);
+}
 .card:hover , .card:focus-within{
   transform: scale(1.05);
 }
@@ -782,5 +793,14 @@ color: var(--third-color);
  font-size: 2rem;
 }
 .card-icons > .bx:hover{
+  color: var(--first-color);
+}
+
+.ruby-rails{
+  position: relative;
+  top: 15px;
+  width: 36px;
+}
+.bx >.ruby-rails:hover{
   color: var(--first-color);
 }
