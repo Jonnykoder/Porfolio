@@ -57,5 +57,10 @@ sr.reveal('.work__img',{interval: 200});
 sr.reveal('.contact__input',{interval: 200}); 
 
 
-
+var typed = new Typed(".auto-type" , {
+    strings :["Learner","Developer","Achiever"],
+    typeSpeed:100,
+    backSpeed:200,
+    loop:true
+})
 

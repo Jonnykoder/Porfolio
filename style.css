@@ -1,6 +1,7 @@
   /*===== GOOGLE FONTS =====*/
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+  /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
   --font-semi: 600;
@@ -48,48 +49,6 @@
    
 }
  
-.wrapper .dynamic{
-    height: 90px;
-    overflow: hidden;
-}
-
-.dynamic li{
-    list-style: none;
-    color: var(--second-color); 
-    top: 0;
-    animation:  slide 12s steps(4) infinite;
-    position: absolute;
-    font-size: var(--big-font-size);
-}
-
-@keyframes slide{
-    100% {
-        top : -360px;
-    }
-} 
-.dynamic li{
-    position: relative;
-}
-.dynamic li::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color:#fff;
-    left: 0;
-    border-left: 2px solid var(--first-color);
-    animation: typing 3s steps(17) infinite;
-    font-size: var(--big-font-size);
-}
-@keyframes typing{
-    40%,60%{
-        left :calc(100% + 30px);
-    }
-    100%{
-        left: 0;
-    }
-}
-
 
 }
 
@@ -214,48 +173,8 @@ img{
 .wrapper .static{
     color: var(--second-color);
    
-}
+
  
-.wrapper .dynamic{
-    height: 90px;
-    overflow: hidden;
-}
-
-.dynamic li{
-    list-style: none;
-    color: var(--second-color); 
-    top: 0;
-    animation:  slide 12s steps(4) infinite;
-    position: absolute;
-    font-size: var(--big-font-size);
-}
-
-@keyframes slide{
-    100% {
-        top : -360px;
-    }
-} 
-.dynamic li{
-    position: relative;
-}
-.dynamic li::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color:#fff;
-    left: 0;
-    border-left: 2px solid var(--second-color);
-    animation: typing 3s steps(17) infinite;
-    font-size: var(--big-font-size);
-}
-@keyframes typing{
-    40%,60%{
-        left :calc(100% + 30px);
-    }
-    100%{
-        left: 0;
-    }
 }
 
 
@@ -803,4 +722,13 @@ color: var(--third-color);
 }
 .bx >.ruby-rails:hover{
   color: var(--first-color);
+}
+
+
+span {
+  color: var(--first-color);
+}
+
+.auto-type{
+  font-family: 'Montserrat', sans-serif;
 }
